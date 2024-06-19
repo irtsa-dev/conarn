@@ -38,7 +38,7 @@ Selecting a file will bring up the editor for said file.
 ## Notices
 - If you ever get the message *"There was an error in saving"*, it means you have entered a value that cannot be accepted.
   - The **Seed** can only be **3** digits long and supprts numbers only.
-  - The **Money** can only be set to values ***999,999** and below.
+  - The **Money** can only be set to values **999,999** and below.
   - The **Views** can only be set to values **300,000,000** and below.
 
 - There exists other items do exist within the game and will eventually be added.
