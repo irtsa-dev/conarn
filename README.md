@@ -1,14 +1,17 @@
 <p align="center">
-    <img src="https://github.com/IrtsaDevelopment/conarn/assets/139963912/e4971f4b-5a16-47cf-a7ac-b33efbb80ab8"
+    <img src="https://github.com/IrtsaDevelopment/conarn/assets/139963912/5b365b42-4fdd-424a-a1da-a1e9590f5819"
         height="280">
 </p>
+<br />
+<br />
+<p align="center">
+    <b>Conarn</b> is a save file editor for the game <a href="https://store.steampowered.com/app/2881650/Content_Warning/">Content Warning</a> by <b>Landfall</b>.
+</p>
+<br />
+<br />
+<br />
+<br />
 
-
-# conarn
-Conarn is a save file editor for the game [Content Warning](https://store.steampowered.com/app/2881650/Content_Warning/) by **Landfall**.
-<br />
-<br />
-<br />
 ## Usage
 Depending on if you downloaded the source code directly or the executable, you will run **conarn.pyw** or **conarn.exe** respectively. Once ran, it will recognize any current saves where **Content Warning** save files are stored. 
 <br />
