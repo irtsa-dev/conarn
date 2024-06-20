@@ -3,7 +3,6 @@
         height="280">
 </p>
 <br />
-<br />
 <p align="center">
     <b>Conarn</b> is a save file editor for the game <a href="https://store.steampowered.com/app/2881650/Content_Warning/">Content Warning</a> by <b>Landfall</b>.
 </p>
