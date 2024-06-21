@@ -18,7 +18,7 @@ def WindowMain() -> GUI.Tk:
     Window = GUI.Tk()
     Window.title('Conarn')
     Window.geometry('300x100')
-    Window.iconbitmap('assets/icon/Icon.ico')
+    Window.iconbitmap('assets/icon/icon.ico')
 
     return Window
 
@@ -27,9 +27,15 @@ def WindowMain() -> GUI.Tk:
 
 
 def WindowLoading(Window: GUI.Tk) -> None:
-    label_title = Widget.Label(master = Window, text = 'Conarn\n', font = 'Courier 20')
+    image_logo = Image.open('assets/icon/logo.png')
+    image_logo = CTkImage(light_image = image_logo, dark_image = image_logo, size = (200, 138))
+    
+    label_title = Widget.Label(master = Window, text = '', image = image_logo)
+    label_title.configure(image = image_logo)
+    
     frame_loading = Widget.Frame(master = Window, width = 150)
     label_loading = AnimatedLabel(master = frame_loading)
+    
     label_title.pack()
     label_loading.pack()
     frame_loading.pack()
@@ -111,7 +117,7 @@ def WindowDisplay(Window, SaveFile) -> None:
     
 
 
-    def goBack():
+    def goBack() -> None:
         notebook_filedisplay.destroy()
         Window.geometry('300x100')
         Window.after(0, lambda: WindowLoading(Window))
@@ -201,7 +207,7 @@ def WindowDisplay(Window, SaveFile) -> None:
 
 
     addInsideText = GUI.StringVar()
-    opmenu_addInsideItem = Widget.OptionMenu(frame_addInsideItem, addInsideText, *Items['NAME'])
+    opmenu_addInsideItem = Widget.OptionMenu(frame_addInsideItem, addInsideText, list(Items['NAME'].keys())[0], *Items['NAME'])
     opmenu_addInsideItem.grid(row = 0, column = 0)
     button_addInsideItem = Widget.Button(master = frame_addInsideItem, text = 'Add', command = lambda x=addInsideText: addItem(x.get(), 'house'))
     button_addInsideItem.grid(row = 0, column = 1)
@@ -209,7 +215,7 @@ def WindowDisplay(Window, SaveFile) -> None:
     button_removeallInsideItems.grid(row = 0, column = 2, padx = 10)
 
     addOutsideText = GUI.StringVar()
-    opmenu_addOutsideItem = Widget.OptionMenu(frame_addOutsideItem, addOutsideText, *Items['NAME'])
+    opmenu_addOutsideItem = Widget.OptionMenu(frame_addOutsideItem, addOutsideText, list(Items['NAME'].keys())[0], *Items['NAME'])
     opmenu_addOutsideItem.grid(row = 0, column = 0)
     button_addOutsideItem = Widget.Button(master = frame_addOutsideItem, text = 'Add', command = lambda x=addOutsideText: addItem(x.get(), 'outside'))
     button_addOutsideItem.grid(row = 0, column = 1)
@@ -229,11 +235,16 @@ def WindowDisplay(Window, SaveFile) -> None:
 
 def WindowSelect(Window):
     for widget in Window.winfo_children(): widget.destroy()
-    label_title = Widget.Label(master = Window, text = 'Conarn\n', font = 'Courier 20')
+
+    image_logo = Image.open('assets/icon/logo.png')
+    image_logo = CTkImage(light_image = image_logo, dark_image = image_logo, size = (200, 138))
+    
+    label_title = Widget.Label(master = Window, text = '', image = image_logo)
+    label_title.configure(image = image_logo)
     label_title.pack()
 
     frame_savefiles = Widget.Frame(master = Window, width = 150)
-    frame_loading = Widget.Frame(master = Window, width = 150)
+    frame_loading = Widget.Frame(master = Window, width = 150, padding = 10)
     frame_savefiles.pack()
 
     label_loading = AnimatedLabel(master = frame_loading)
@@ -247,7 +258,7 @@ def WindowSelect(Window):
         SaveFile = SFH(ParseSave(filesFromFolder()[save]))
 
         frame_loading.pack_forget()
-        Window.geometry('600x535')
+        Window.geometry('600x615')
         WindowDisplay(Window, SaveFile)
 
 
