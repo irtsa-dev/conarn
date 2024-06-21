@@ -27,7 +27,7 @@ class AnimatedLabel(CGUI.CTkLabel):
         images = [(f'{loadingPath}/{item}') for item in sorted(list(walk(loadingPath))[-1][-1], key = lambda i: int(i.split('loading-')[-1].split('.')[0]))]
         for i in range(len(images)):
             image = Image.open(images[i])
-            images[i] = CGUI.CTkImage(light_image = image, dark_image = image, size = (50, 50))
+            images[i] = CGUI.CTkImage(light_image = image, dark_image = image, size = (100, 100))
         return images
     
 
