@@ -21,14 +21,14 @@ Depending on if you downloaded the source code directly or the executable, you w
 <br />
 It will display any found files for you to edit.
 <p align="left">
-    <img src="https://github.com/IrtsaDevelopment/conarn/assets/139963912/32f6e33e-3c8a-4572-a64f-3ae76ef5bb57"
-        height="100">
+    <img src="https://github.com/IrtsaDevelopment/conarn/assets/139963912/a055dcdd-7b8b-4727-99ea-f13357c14ca5"
+        height="200">
 </p>
 <br />
 <br />
 Selecting a file will bring up the editor for said file.
 <p align="left">
-    <img src="https://github.com/IrtsaDevelopment/conarn/assets/139963912/e3e64cb6-c0ea-46dc-9492-548b7d2c7c36"
+    <img src="https://github.com/IrtsaDevelopment/conarn/assets/139963912/7b613928-59a5-4523-a27e-0fb50cba8c60"
         height="350">
 </p>
 <br />
@@ -42,7 +42,5 @@ Selecting a file will bring up the editor for said file.
   - The **Seed** can only be **3** digits long and supprts numbers only.
   - The **Money** can only be set to values **999,999** and below.
   - The **Views** can only be set to values **300,000,000** and below.
-
-- There exists other items do exist within the game and will eventually be added.
 
 - The ability to edit "Network Deals" will be added, hence functions and sections of codes that are there to allow for this future feature.
