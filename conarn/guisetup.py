@@ -53,8 +53,8 @@ def WindowDisplay(Window, SaveFile) -> None:
 
     notebook_filedisplay = Widget.Notebook(master = frame_filedisplay, width = 600, height = 340)
     notebook_filedisplay.pack(expand = False)
-    NotebookFrames = [Widget.Frame() for i in range(3)]
-    NotebookFNames = ['General Information', 'Inside Items', 'Outside Items']
+    NotebookFrames = [Widget.Frame() for i in range(4)]
+    NotebookFNames = ['General Information', 'Inside Items', 'Outside Items', 'Network Deals']
     for i in range(len(NotebookFrames)): notebook_filedisplay.add(NotebookFrames[i], text = NotebookFNames[i])
 
     frame_bottomButtons = Widget.Frame(master = Window, padding = 10)
@@ -63,6 +63,8 @@ def WindowDisplay(Window, SaveFile) -> None:
     frame_outsideItems = Widget.Frame(master = NotebookFrames[2], relief = 'sunken')
     frame_addInsideItem = Widget.Frame(master = NotebookFrames[1], relief = 'sunken')
     frame_addOutsideItem = Widget.Frame(master = NotebookFrames[2], relief = 'sunken')
+    frame_selectNetworkDeals = Widget.Frame(master = NotebookFrames[3], relief = 'sunken')
+    frame_editNetworkDeal = Widget.Frame(master = NotebookFrames[3], relief = 'sunken')
     
     frame_filedisplay.pack()
     frame_bottomButtons.pack(after = frame_filedisplay)
@@ -71,6 +73,24 @@ def WindowDisplay(Window, SaveFile) -> None:
     frame_outsideItems.pack()
     frame_addInsideItem.pack(side = 'bottom')
     frame_addOutsideItem.pack(side = 'bottom')
+
+
+
+    def detectNetworkSelect(self) -> None:
+        if notebook_filedisplay.index(notebook_filedisplay.select()) == 3:
+            Information = NotebookFrames[0].children['!frame'].children
+            InformationNames = [i for i in Information]
+            week = int(Information[InformationNames[5]]['text'])
+
+            if week == 1:
+                frame_selectNetworkDeals.pack()
+                try: frame_editNetworkDeal.pack_forget()
+                except: pass
+            else:
+                frame_editNetworkDeal.pack()
+                try: frame_selectNetworkDeals.pack_forget()
+                except: pass
+    notebook_filedisplay.bind('<<NotebookTabChanged>>', detectNetworkSelect)
 
 
 
