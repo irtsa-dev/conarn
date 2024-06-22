@@ -2,9 +2,27 @@
     <img src="https://github.com/IrtsaDevelopment/conarn/assets/139963912/5b365b42-4fdd-424a-a1da-a1e9590f5819"
         height="280">
 </p>
+<p align="center">
+<a href="https://github.com/irtsa-dev/conarn/releases/tag/v1.1.0">
+        <img src="https://img.shields.io/badge/release-1.1.0-brightgreen"
+            alt="release"></a>
+<a href="https://github.com/irtsa-dev/conarn/issues">
+        <img src="https://custom-icon-badges.demolab.com/github/issues-raw/irtsa-dev/conarn?logo=issue"
+            alt="issues"></a>
+<a href="https://github.com/irtsa-dev/conarn/pulls">
+        <img src="https://custom-icon-badges.demolab.com/github/issues/irtsa-dev/conarn?logo=git-pull-request"
+            alt="pulls"></a>
+</p>
 <br />
 <p align="center">
-    <b>Conarn</b> is a save file editor for the game <a href="https://store.steampowered.com/app/2881650/Content_Warning/">Content Warning</a> by <b>Landfall</b>.
+    <b>Conarn</b> is a save file editor for the game <a href="https://store.steampowered.com/app/2881650/Content_Warning/">Content Warning</a> by <b>Landfall</b>. 
+</p>
+<p align="center">
+    <b>Conarn</b> utilizes <a href="https://github.com/python/cpython/blob/3.12/Lib/tkinter/__init__.py">Tkinter</a> and <a href="https://github.com/TomSchimansky/CustomTkinter">CustomTkinter</a> for the GUI along with <a href="https://github.com/pyinstaller/pyinstaller">pyinstaller</a> to package as an executable. Each release has the source and executable versions of the program available for download.
+</p>
+<br />
+<p align="center">
+    Reference the <a href="https://github.com/irtsa-dev/conarn/releases">Releases</a> for public releases including the source-code and executable.
 </p>
 <br />
 <br />
