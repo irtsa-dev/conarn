@@ -10,7 +10,7 @@
         <img src="https://custom-icon-badges.demolab.com/github/issues-raw/irtsa-dev/conarn?logo=issue"
             alt="issues"></a>
 <a href="https://github.com/irtsa-dev/conarn/pulls">
-        <img src="https://custom-icon-badges.demolab.com/github/issues/irtsa-dev/conarn?logo=git-pull-request"
+        <img src="https://custom-icon-badges.demolab.com/github/issues-pr/irtsa-dev/conarn?logo=git-pull-request"
             alt="pulls"></a>
 </p>
 <br />
