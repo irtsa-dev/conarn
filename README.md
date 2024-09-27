@@ -3,7 +3,7 @@
         height="280">
 </p>
 <p align="center">
-<a href="https://github.com/irtsa-dev/conarn/releases/tag/v1.1.0">
+<a href="https://github.com/irtsa-dev/conarn/releases/tag/v1.1.1">
         <img src="https://img.shields.io/badge/release-1.1.0-brightgreen"
             alt="release"></a>
 <a href="https://github.com/irtsa-dev/conarn/issues">
