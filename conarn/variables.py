@@ -51,7 +51,8 @@ Items = {
         "1f6e51e7-af30-45af-a3e6-9ace370ad8ad" : "thumbnail2",
         "f2f236a9-9e4d-4fde-90df-e9031f3a869d" : "workout1",
         "d4480b01-fc38-4112-82ce-c598917b2a1d" : "workout2",
-        "aea4d548-edd4-4b06-92e7-5e8bd8104e4a" : "yoga"
+        "aea4d548-edd4-4b06-92e7-5e8bd8104e4a" : "yoga",
+        "1f361106-8460-4180-942b-0823fcb5973c" : "sketchPad"
     }
 }
 Items['NAME'] = {Items['ID'][item] : item for item in Items['ID']}
